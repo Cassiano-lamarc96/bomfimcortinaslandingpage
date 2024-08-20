@@ -1,49 +1,110 @@
-.navbar {
-    justify-content: end !important;
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.custom-navbar {
+    background-color: transparent; /* Navbar transparente */
+    border: none;
 }
+
+.navbar-nav .nav-link {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para os links */
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro para o item ativo */
+}
+
+.custom-btn {
+    color: white;
+    background-color: #09BD3F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #07a32d; /* Cor mais escura no hover */
+}
+
 
 #inicio {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Para garantir que o conteúdo do carrossel não transborde */
 }
 
-.content a {
-    font-size: 23px;
-    color: #DCC424;
-    text-decoration: none;
-    border: 2px solid #fff;
-    padding: 15px 25px;
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.background-clip {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.background-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4); /* Adiciona um overlay escuro */
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.background-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.background-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.background-text .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #DCC424;
+    border: none;
     border-radius: 50px;
     transition: 0.3s;
 }
 
-.content a:hover {
+.background-text .btn:hover {
     background-color: #fff;
     color: #A13724;
-}
-
-.background-clip {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9){
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .background-clip {
-        width: auto;
-        height: 100%;
-    }
 }
