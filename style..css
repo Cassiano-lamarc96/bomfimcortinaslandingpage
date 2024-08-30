@@ -2,16 +2,18 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .custom-navbar {
-    background-color: transparent; /* Navbar transparente */
+    background-color: transparent;
+    /* Navbar transparente */
     border: none;
 }
 
 .navbar-nav .nav-link {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para os links */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente para os links */
     padding: 10px 15px;
     border-radius: 5px;
     margin: 5px;
@@ -19,11 +21,13 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro ao passar o mouse */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo mais escuro ao passar o mouse */
 }
 
 .navbar-nav .nav-item.active .nav-link {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro para o item ativo */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fundo mais escuro para o item ativo */
 }
 
 .custom-btn {
@@ -36,15 +40,46 @@ body {
 }
 
 .custom-btn:hover {
-    background-color: #07a32d; /* Cor mais escura no hover */
+    background-color: #07a32d;
+    /* Cor mais escura no hover */
 }
 
+.custom-btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn-instagram:hover {
+    background: linear-gradient(45deg, #bc1888 0%, #cc2366 25%, #dc2743 50%, #e6683c 75%, #f09433 100%);
+}
+
+.custon-btn-wpp {
+    background-color: #25D366;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-btn-wpp:hover {
+    background-color: #128C7E;    
+}
 
 #inicio {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden; /* Para garantir que o conteúdo do carrossel não transborde */
+    overflow: hidden;
+    /* Para garantir que o conteúdo do carrossel não transborde */
 }
 
 .carousel-inner {
@@ -78,7 +113,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4); /* Adiciona um overlay escuro */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adiciona um overlay escuro */
     color: white;
     padding: 20px;
     z-index: 1;
@@ -107,4 +143,37 @@ body {
 .background-text .btn:hover {
     background-color: #fff;
     color: #A13724;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    min-height: 80vh;
+}
+
+.map-content iframe {
+    border-radius: 10%;
+    border-width: 10px;
+    border: solid;
+    border-color: #DCC424;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+#contatos{
+    background-color: #DCC424;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
 }
