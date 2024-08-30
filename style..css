@@ -148,10 +148,7 @@ body {
 .map-container {
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
-    min-height: 80vh;
 }
 
 .map-content iframe {
@@ -170,10 +167,9 @@ body {
 }
 
 #contatos{
-    background-color: #DCC424;
-    height: 100vh;
+    background: linear-gradient(90deg, #DCC424, #A13724);
+    height: 100vh;    
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
 }
